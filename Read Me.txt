@@ -1,3 +1,107 @@
+# Impact of Screen Time on Mental Health
+
+## Project Overview
+
+This project explores the relationship between screen-time patterns, lifestyle habits, and mental-health scores using Python and machine learning.
+
+The project covers exploratory data analysis, data preprocessing, feature selection, regression model comparison, model evaluation, explainable AI, and an interactive Streamlit application for individual and batch predictions.
+
+**Project type:** Academic team capstone  
+**Domain:** Data Science, Machine Learning, Behavioral Data Analytics
+
+## Objectives
+
+- Explore relationships between screen-time habits, lifestyle factors, and mental-health scores.
+- Profile, clean, and prepare data for modeling.
+- Compare multiple regression algorithms and feature-selection approaches.
+- Evaluate model performance using appropriate regression metrics.
+- Interpret model predictions using SHAP.
+- Build an interactive application for model-based predictions.
+
+## Technology Stack
+
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- Matplotlib and Seaborn
+- SHAP
+- Streamlit
+- Plotly
+- Joblib
+
+## Methodology
+
+### 1. Data Exploration and Preprocessing
+- Dataset profiling and descriptive statistics
+- Missing-value and duplicate checks
+- Outlier detection and preprocessing
+- Feature transformation and scaling
+
+### 2. Feature Engineering and Selection
+- Evaluation of different feature representations
+- Feature selection using RFECV and other selection techniques
+- Preparation of model-ready datasets
+
+### 3. Model Development
+The project evaluates regression approaches, including:
+
+- Linear Regression
+- Ridge, Lasso, and ElasticNet
+- Decision Tree
+- Random Forest and Extra Trees
+- Gradient Boosting
+- Support Vector Regression
+- K-Nearest Neighbors
+- Ensemble approaches
+
+### 4. Model Evaluation
+Model comparisons use metrics such as:
+- Mean Absolute Percentage Error (MAPE)
+- Symmetric Mean Absolute Percentage Error (SMAPE)
+- Root Mean Squared Error (RMSE)
+- Cross-validation scores
+
+Refer to the generated results table for the actual model results. No single model should be considered superior without evaluating the relevant test and validation results.
+
+### 5. Explainable AI
+SHAP is used to investigate global feature importance and individual prediction explanations.
+
+### 6. Streamlit Application
+The deployment component supports individual predictions and batch processing of CSV/Excel inputs, subject to the required model artifacts and compatible input schema.
+
+## Repository Contents
+
+- `Mental_Health_Capstone_Project_G04.ipynb` — Jupyter notebook
+- `Mental_Health_Capstone_Project_G04.py` — Python source code
+- `Deployment.py` — Streamlit application
+
+Additional files, including model artifacts, data files, results and screenshots, may be required to reproduce the complete workflow.
+
+## Setup and Installation
+
+Use Python in a compatible environment.
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment, then install the project's required dependencies.
+
+```bash
+python -m pip install --upgrade pip
+pip install pandas numpy scikit-learn matplotlib seaborn shap streamlit plotly joblib ydata-profiling openpyxl
+```
+
+Check the imports in the deployment script and notebook, and pin compatible dependency versions in `requirements.txt` before publishing a reproducible release.
+
+## Running the Application
+
+1. Place `Deployment.py` and the required model artifacts in the expected deployment directory.
+2. Ensure the six model and preprocessing artifacts listed in the project deployment instructions are available.
+3. Configure the application to read input files from valid local or uploaded paths.
+4. Run:
+
+-----------------------------------------------------------------------------------------------------------------------------
 1. Python Code for data cleaning and model building: Mental_Health_Capstone_Project_G04.ipynb
 2. Raw data: digital_diet_mental_health.csv
 3. Deployment code: Deployment.py
